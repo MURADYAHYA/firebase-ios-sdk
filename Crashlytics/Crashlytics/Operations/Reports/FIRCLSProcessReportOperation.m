@@ -18,7 +18,7 @@
 #import "FIRCLSFile.h"
 #import "FIRCLSInternalReport.h"
 #import "FIRCLSSerializeSymbolicatedFramesOperation.h"
-#import "FIRCLSStackFrame.h"
+#import "FIRStackFrame_Private.h"
 #import "FIRCLSSymbolResolver.h"
 #import "FIRCLSSymbolicationOperation.h"
 
@@ -64,7 +64,7 @@
     NSMutableArray *frameArray = [NSMutableArray array];
 
     for (NSNumber *pc in [threadDetails objectForKey:@"stacktrace"]) {
-      FIRCLSStackFrame *frame = [FIRCLSStackFrame stackFrameWithAddress:[pc unsignedIntegerValue]];
+      FIRStackFrame *frame = [FIRStackFrame stackFrameWithAddress:[pc unsignedIntegerValue]];
 
       [frameArray addObject:frame];
     }

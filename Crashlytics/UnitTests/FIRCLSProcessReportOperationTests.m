@@ -21,7 +21,7 @@
 #import "FIRCLSFileManager.h"
 #import "FIRCLSInternalReport.h"
 #import "FIRCLSMockSymbolResolver.h"
-#import "FIRCLSStackFrame.h"
+#import "FIRStackFrame_Private.h"
 
 @interface FIRCLSProcessReportOperationTests : XCTestCase
 
