@@ -20,6 +20,9 @@
 #import "FBLPromises.h"
 #endif
 
+#import "FIRStackFrame_Private.h"
+#import "FIRExceptionModel_Private.h"
+
 #include "FIRCLSCrashedMarkerFile.h"
 #import "FIRCLSDataCollectionArbiter.h"
 #import "FIRCLSDefines.h"
@@ -308,6 +311,9 @@ NSString *const FIRCLSGoogleTransportMappingID = @"1206";
 }
 
 - (void)recordExceptionModel:(FIRExceptionModel *)exceptionModel {
+  [self recordCustomExceptionName:exceptionModel.name
+                           reason:exceptionModel.reason
+                       frameArray:];
 }
 
 - (void)recordCustomExceptionName:(NSString *)name

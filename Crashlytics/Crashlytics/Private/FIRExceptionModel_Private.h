@@ -12,23 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef FIRStackFrame_Private_h
-#define FIRStackFrame_Private_h
+#ifndef FIRExceptionModel_Private_h
+#define FIRExceptionModel_Private_h
 
 #import <Foundation/Foundation.h>
 
-#import "FIRStackFrame.h"
+#import "FIRExceptionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FIRStackFrame (Private)
+@interface FIRExceptionModel (Private)
 
-@property(nonatomic, copy) NSString *symbol;
-@property(nonatomic, copy) NSString *file;
-@property(nonatomic, assign) NSInteger line;
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *reason;
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#endif /* FIRStackFrame_Private_h */
+#endif /* FIRExceptionModel_Private_h */

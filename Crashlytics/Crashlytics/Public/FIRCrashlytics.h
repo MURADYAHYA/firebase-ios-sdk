@@ -110,7 +110,7 @@ NS_SWIFT_NAME(Crashlytics)
 /**
  * Records an Exception Model described by an FIRExceptionModel object. The events are
  * grouped and displayed similarly to crashes. Keep in mind that this method can be expensive.
- * The total number of FIRExceptionModel that can be recorded during your app's life-cycle is
+ * The total number of FIRExceptionModels that can be recorded during your app's life-cycle is
  * limited by a fixed-size circular buffer. If the buffer is overrun, the oldest data is dropped.
  * Exception Models are relayed to Crashlytics on a subsequent launch of your application.
  *
