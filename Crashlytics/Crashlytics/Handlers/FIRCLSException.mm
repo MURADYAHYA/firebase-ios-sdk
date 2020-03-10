@@ -22,9 +22,9 @@
 #include "FIRCLSHandler.h"
 #import "FIRCLSLogger.h"
 #include "FIRCLSProcess.h"
-#import "FIRStackFrame_Private.h"
 #import "FIRCLSUserLogging.h"
 #import "FIRCLSUtility.h"
+#import "FIRStackFrame_Private.h"
 
 #include "FIRCLSDemangleOperation.h"
 #import "FIRCLSReportManager_Private.h"

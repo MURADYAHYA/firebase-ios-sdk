@@ -18,9 +18,9 @@
 #import "FIRCLSFile.h"
 #import "FIRCLSInternalReport.h"
 #import "FIRCLSSerializeSymbolicatedFramesOperation.h"
-#import "FIRStackFrame_Private.h"
 #import "FIRCLSSymbolResolver.h"
 #import "FIRCLSSymbolicationOperation.h"
+#import "FIRStackFrame_Private.h"
 
 @implementation FIRCLSProcessReportOperation
 

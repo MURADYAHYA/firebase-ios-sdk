@@ -14,7 +14,7 @@
 
 #import "FIRStackFrame_Private.h"
 
-@interface FIRStackFrame()
+@interface FIRStackFrame ()
 
 @property(nonatomic, copy, nullable) NSString *symbol;
 @property(nonatomic, copy, nullable) NSString *rawSymbol;
@@ -27,7 +27,6 @@
 @property(nonatomic, assign) BOOL isSymbolicated;
 
 @end
-
 
 @implementation FIRStackFrame
 
@@ -59,15 +58,15 @@
 }
 
 + (instancetype)stackFrameWithAddress:(NSUInteger)address {
-  FIRStackFrame* frame = [self stackFrame];
+  FIRStackFrame *frame = [self stackFrame];
 
   [frame setAddress:address];
 
   return frame;
 }
 
-+ (instancetype)stackFrameWithSymbol:(NSString*)symbol {
-  FIRStackFrame* frame = [self stackFrame];
++ (instancetype)stackFrameWithSymbol:(NSString *)symbol {
+  FIRStackFrame *frame = [self stackFrame];
 
   frame.symbol = symbol;
   frame.rawSymbol = symbol;
@@ -79,8 +78,8 @@
 
 - (NSString *)description {
   if (self.isSymbolicated) {
-    return [NSString stringWithFormat:@"{%@ - %@:%u}", [self fileName],
-                                      [self symbol], [self lineNumber]];
+    return [NSString
+        stringWithFormat:@"{%@ - %@:%u}", [self fileName], [self symbol], [self lineNumber]];
   }
 
   if (self.fileName) {

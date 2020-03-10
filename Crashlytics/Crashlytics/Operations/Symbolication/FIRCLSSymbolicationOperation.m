@@ -14,8 +14,8 @@
 
 #import "FIRCLSSymbolicationOperation.h"
 
-#import "FIRStackFrame_Private.h"
 #import "FIRCLSSymbolResolver.h"
+#import "FIRStackFrame_Private.h"
 
 @implementation FIRCLSSymbolicationOperation
 
