@@ -307,6 +307,9 @@ NSString *const FIRCLSGoogleTransportMappingID = @"1206";
   FIRCLSUserLoggingRecordError(error, nil);
 }
 
+- (void)recordExceptionModel:(FIRExceptionModel *)exceptionModel {
+}
+
 - (void)recordCustomExceptionName:(NSString *)name
                            reason:(NSString *)reason
                        frameArray:(NSArray<FIRCLSStackFrame *> *)frameArray {
