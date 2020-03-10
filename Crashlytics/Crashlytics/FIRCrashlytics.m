@@ -311,9 +311,9 @@ NSString *const FIRCLSGoogleTransportMappingID = @"1206";
 }
 
 - (void)recordExceptionModel:(FIRExceptionModel *)exceptionModel {
-  const char * name = [[exceptionModel.name copy] UTF8String];
-  const char * reason = [[exceptionModel.reason copy] UTF8String];
-  
+  const char *name = [[exceptionModel.name copy] UTF8String];
+  const char *reason = [[exceptionModel.reason copy] UTF8String];
+
   FIRCLSExceptionRecord(FIRCLSExceptionTypeCustom, name, reason, [frameArray copy], NO);
 }
 
